@@ -1,0 +1,839 @@
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(./fonts/Gilroy-SemiBold.ttf);
+}
+:root {
+    --color-1: #0065FE;
+    --main-text-color: #141414;
+    --color-2: #FFF;
+    --color-3:  #005AE2;
+    --color-4: #3284FF;
+    --color-5: #4991FF;
+    --footer-color-1: #071827;
+    --footer-color-2: #112232;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--color-2);
+}
+li {
+    list-style: none;
+}
+.Page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+    max-width: 1150px;
+    margin: 12px auto;
+}
+.header-navigation-1, .initial-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+#My-URLs {
+    color: var(--color-1);
+    font-size: 18px;
+    font-family: 'Gilroy-Medium';
+    text-decoration: none;
+}
+#Features {
+    display: flex;
+    align-items: flex-start;
+}
+.dark-link {
+    color: var(--text-color-main-text, #141414);
+    font-size: 18px;
+    font-family: 'Gilroy-Medium';
+    text-decoration: none;
+}
+.Page-header span {
+    display: flex;
+    width: 99px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gilroy-Bold';
+    color: var(--color-1);
+    font-size: 24px;
+    line-height: 32px;
+}
+.header-title {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px
+}
+.header-navigation-2, .end-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.Log-more {
+    font-family: 'Gilroy-SemiBold';
+    color: var(--color-1);
+    font-size: 16px;
+    text-decoration: none;
+}
+.Log-more:hover {
+    color: var(--color-5);
+}
+.Try-signup {
+    background-color: var(--color-1);
+    border-radius: 100px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 142px;
+    height: 44px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 16px;
+    color: var(--color-2);
+    text-decoration: none;
+}
+.Try-signup:hover {
+    background-color: var(--color-5);
+}
+.header-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.header-section-2 {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gilroy-Medium';
+    line-height: 28px;
+    width: 781px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-section-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+.landing-page-text {
+    width: 948px;
+    margin: 106px auto;
+    margin-bottom: -32px;
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Gilroy-Bold';
+    line-height: 96px;
+}
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.landing-page-text-effect {
+    color: var(--color-3);
+}
+.boss-section-1 {
+    width: 833px;
+    height: 336.568px;
+    margin: 56px 238px -12.56px 369px;
+}
+.header-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    align-items: flex-start;
+    border-radius: 24px;
+    border: 0.5px solid var(--color-3);
+    background: rgba(254, 254, 254, 0.10);
+    backdrop-filter: blur(106px);
+    padding: 40px 60px;
+    margin: 24px 0px 113px 65px;
+    width: 769px;
+    height: 200px; 
+    position: absolute;
+    z-index: 2;
+}
+.icons {
+    display:flex;
+    gap: 20px;
+}
+
+/*Create the overlap*/
+.link-1, .link-2 {
+    margin-right: -6px;
+}
+.link-2, .link-3 {
+    margin-left: -6px;
+}
+.icon-text {  
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+}
+.header-icons-background {
+    margin-right: 501px;
+}
+#anab {
+    position: absolute;
+    margin-left: 65px;
+    z-index: 1;
+}
+.er {
+    width: 100%;
+}
+.desktop-10 {
+    display: flex;
+    flex-direction: column;
+}
+.desktop-10-header {
+    background: #F9FBFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 60px 140px;
+}
+.possibilities {
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pos-01,.pos-02{
+    padding: 0px 4px;
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pos-1, .pos-2, .pos-3, .pos-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+.desktop-10-htitle {
+    color: var(--main-text-color);
+    font-size: 35px;
+    font-family: 'Gilroy-Bold';
+    width: 437px;
+}
+.desktop-10-htitle span {
+    color: var(--color-1);
+}
+.pos-upper {
+    color: var(--main-text-color);
+    font-size: 32px;
+    font-family: 'Gilroy-SemiBold';
+}
+.pos-lower {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+}
+.pos-lower-1 {
+    width: 88px;
+}
+.pos-lower-4 {
+    width: 123px;
+}
+.choose-scissors {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 96px;
+    margin-top: 128px;
+    padding-bottom: 130px;
+}
+#sci {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.scis {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+}
+#sci-p0 {
+    color: var(--main-text-color);
+    font-size: 35px;
+    font-family: 'Gilroy-Bold';
+}
+#sci-p0 span {
+    color: var(--color-3);
+}
+#sci-p {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+}
+.top-2, .bottom-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px
+}
+.top-21, .top-22 {
+    margin-bottom: 64px;
+}
+.head-2 {
+    color: var(--main-text-color);
+    font-size: 25px;
+    font-family: 'Gilroy-SemiBold';
+}
+.item {
+    border: 1px solid rgba(50, 132, 255, 0.13);
+    border-width: 10px;
+    border-radius: 56px;
+    background: rgba(50, 132, 255, 0.13);
+    margin-bottom: 40px;
+}
+.it {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.s3-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.s3-head span {
+    color: var(--color-3);
+}
+.s3-head h2 {
+    color: #141414;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+    line-height: 48px;
+}
+.s3-header p {
+    color: var(--text-color-main-text, #141414);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+}
+.pricing-plan {
+    padding: 24px 98px 45px 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 379px;
+    height: 455px;
+    border-radius: 12px;
+    border: 0.4px solid var(--color-3);
+    background: var(--color-2);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+.pricing-plan-basic {
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+    margin-bottom: 34px;
+}
+.price-h3 {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+    line-height: 48px;
+    margin-bottom: 8px;
+}
+.pricing-plan-features {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+    margin-left: 8px;
+}
+.price-h4 {
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+    width: 250px;
+    margin-bottom: 16px;
+}
+/*.pricing-plan-features::before {
+    content: url('./check-circle.svg');
+    position: absolute;
+    margin-right: 8px;
+}*/
+.check-price {
+    display: flex;
+    align-items: center;
+}
+.check-price:not(:last-child) {
+    margin-bottom: 24px;
+}
+.pricing-plan3 {
+    padding: 24px 66px 45px 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 379px;
+    height: 455px;
+    border-radius: 12px;
+    border: 0.4px solid var(--color-3);
+    background: var(--color-2);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+.pricing-plan2 {
+    padding: 24px 98px 45px 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 410px;
+    height: 627px;
+    border-radius: 12px;
+    border: 0.4px solid var(--color-3);
+    background: var(--color-2);
+    border-radius: 12px;
+    /*There's no color code just a gradient specified and so I have to copy the entire thing*/
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    margin-left: -40px;
+    margin-right: -40px;
+    z-index: 2;
+}
+.pr-2, .pr-1, .pr0, .pr1, .pr2, .pr3, .pr4, .pr5 {
+    color: #FFF;
+}
+.pricing-plan-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+.gcp-sp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 112px;
+}
+.gcp {
+    font-size: 16px;
+    font-family: 'Gilroy-SemiBold';
+    line-height: 12px;
+    color: var(--color-1);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid var(--color-1);
+}
+.gcp:hover {
+    color: var(--color-5);
+    border: 1px solid var(--color-5);
+}
+.sp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-size: 16px;
+    font-family: 'Gilroy-SemiBold';
+    line-height: 12px;
+    text-decoration: none;
+}
+.sp:hover {
+    background-color: var(--color-5);
+}
+.image-container {
+    position: relative;
+}
+.background-image {
+    height: 523px;
+    width: 100%;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.form {
+    height: 355px;
+    width: 476px;
+    border-radius: 12px;
+    background-color: var(--color-2);
+    position: absolute;
+    left: 482px;
+    top: 83.5px;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.page4-container {
+    position: relative;
+}
+#url{
+    border-radius: 12px;
+    border: 1px solid var(--color-4);
+    width: 392px;
+    height: 55px;
+    padding: 8px 12px;
+    outline: transparent;
+}
+#url::placeholder {
+    padding: 8px 12px;
+    color:var(--color-4)
+}
+.choose-alias {
+    display: flex;
+    gap: 12px;
+}
+.trim-url{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.choose-domain {
+    padding: 0px 20px 0px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--color-4);
+    display: flex;
+    align-items: center;
+    width: 202px;
+    height: 48px;
+    color: var(--primary-100, #3284FF);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+    line-height: 12px;
+    outline: transparent;
+}
+#type-here {
+    border-radius: 12px;
+    border: 1px solid var(--color-4);
+    width: 178px;
+    height: 48px;
+    padding: 8px 12px;
+    outline: transparent;
+}
+#type-here::placeholder {
+    padding: 8px 12px;
+    color:var(--color-4);
+}
+.trim-url button {
+    border-radius: 100px;
+    background: var(--color-3);
+    width: 392px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--color-3);
+    cursor: pointer;
+}
+.trim-url button:hover {
+    background-color: var(--color-5);
+    border: 1px solid var(--color-5);
+}
+.trul {
+    text-decoration: none;
+    color: var(--color-2);
+    font-size: 14px;
+    font-family: 'Gilroy-SemiBold';
+    line-height: 12px;
+}
+#form-footer {
+    width: 373px;
+    color: var(--color-5);
+    font-size: 14px;
+    font-family: 'Gilroy-Medium';
+    line-height: 20px;
+    padding: 10px;
+}
+.FAQs-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 43px;
+}
+.FAQs-header h2 {
+    color: var(--main-text-color);
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+    line-height: 32px;
+}
+.accordion .label {
+    padding: 16px 0;
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+    position: relative;
+    cursor: pointer;
+}
+.accordion .content {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.accordion {
+    width: 792px;
+    height: 843px;
+    padding-top: 48px;
+    margin: 0 auto;
+}
+.accordion .container {
+    position: relative;
+}
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+.accordion hr {
+    border: 1px solid #D6D6D6;
+}
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: 80px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+.FAQs {
+    position: relative;
+}
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.image-container2 {
+    position: relative;
+}
+.background-image2 {
+    width: 100%;
+    height: 299px;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%);
+}
+.overlay5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.overlay6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer-img {
+    position: relative;
+}
+/*Positioning for text is trial and error, I'll appreciate tips for better work*/
+.footer-img p {
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold';
+    line-height: 48px;
+}
+.footer-img button {
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    width: 200px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 1px solid var(--color-3);
+    background: var(--color-3);
+    cursor: pointer;
+}
+.footer-img button:hover {
+    background-color: var(--color-5);
+    border: 1px solid var(--color-5)
+}
+#get {
+    color: var(--color-2);
+    font-size: 16px;
+    font-family: 'Gilroy-SemiBold';
+    line-height: 12px;
+    text-decoration: none;
+}
+.footer-allcontent {
+    position: relative;
+    width: 100%;
+    height: 561px;
+}
+.overlay7 {
+    position: absolute;
+    top: 20px;
+    left: 1px;
+}
+.overlay8 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer-allcontent span {
+    display: flex;
+    width: 99px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gilroy-Bold';
+    color: var(--main-text-color);
+    font-size: 24px;
+    line-height: 32px;
+}
+.footer-scissor {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 8px;
+}
+.Scissor-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.footer-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 24px;
+}
+.foot1, .foot3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+}
+.foot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+}
+.footer-group h4 {
+    color: var(--footer-color-1);
+    font-size: 16px;
+    font-family: 'Gilroy-Bold';
+    line-height: 24px;
+}
+.footer-group li {
+    color: var(--footer-color-2);
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+}
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 39px;
+    padding-top: 95px;
+}
+.footer-footer .ffl {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--footer-color-2);
+    text-decoration: none;
+} 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0px 12px;
+    position: absolute;
+    top: 502px;
+    left: 957px;
+}
+/*Thanks! This project was stressful but a great opportunity to learn. I'd like corrections on positioning of the overlays. The method I used did enough but is pretty limited. I also want to know the best layout to use for page 3 and the footer*/

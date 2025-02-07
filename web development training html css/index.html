@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            
+            <!-- Replaced text content with image -->
+            <img src="./Capture.PNG" alt="Welcome Image" class="welcome-image">
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="" disabled selected>Select here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="weight">Weight (KG)</label>
+                        <input type="number" id="weight" placeholder="Enter Weight">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (CM)</label>
+                        <input type="number" id="height" placeholder="Enter height here...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="activity">Activity Level</label>
+                    <select id="activity">
+                        <option value="" disabled selected>Select here</option>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="light">Light Active</option>
+                        <option value="moderate">Moderate Active</option>
+                        <option value="very">Very Active</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password">
+                        <span class="password-toggle">👁️</span>
+                    </div>
+                </div>
+                <button type="submit" class="register-button">Register</button>
+                <p class="terms">
+                    By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
